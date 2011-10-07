@@ -16,12 +16,18 @@ i defined 2 classes
 
 The main class is 'VideoData' which loads and process the cvs file, the main method is "load_csv" which calls the CSV class and then walk through the array for each line of the array of arrays as well  the first line contains the 'tags' that should replace the 'x' once it finds a match in a column replaces it with the value of line 1, after  that split the array from column 3 to the end of the array eliminates 'null's' then creates a new Video class and add it to a HashMap whose key is the name of video
 
+# About NullCatching
+
+The exceptions are catched but not actions as ben taken understanding that the loader is a 'batch' processor can't break all the operation because a single exception.
+
 ### Now we can use the utility methods
 
  * all
  * by_name 
 
-All returns all the values of the HashMap as array
+'all' returns all the values of the HashMap as array
+
+'by_name(video_name)' return the specific video object
  
 ## Example (test.rb)
 
