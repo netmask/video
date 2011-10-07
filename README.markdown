@@ -30,7 +30,8 @@ The exceptions are catched but not actions as ben taken understanding that the l
 'by_name(video_name)' return the specific video object
  
 ## Example (test.rb)
-
+	
+	require './video_parser'
 	video_data = VideoData.new
 	video_data.load_csv('video_data.csv')
 	
