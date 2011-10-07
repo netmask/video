@@ -1,8 +1,8 @@
 #Installation 
 I test the code on the following Rubies
-*Ruby 1.8.7 p249
-*Ruby 1.9.2 p290
-*JRuby 1.6.4 
+ *Ruby 1.8.7 p249
+ *Ruby 1.9.2 p290
+ *JRuby 1.6.4 
 
 #### Workflow 
 
