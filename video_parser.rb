@@ -1,4 +1,4 @@
-require 'csv'
+require './csv.rb'
 require 'date'
 
 #just a pure simple ruby class as container
