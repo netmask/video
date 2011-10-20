@@ -37,16 +37,12 @@ class VideoData
   end
   
   def load_csv(file) 
-    begin 
       videos = CSV.read(file)            
       (1..(videos.length-1) ).each do |a|         
         videos[a].fill(3..videos[a].length){|i| videos[a][i] == 'x' ?  videos[0].values_at(i).join.sub(":","_")  :  nil } 
         video_tags = videos[a].slice!(3..videos[a].length)
         add_video Video.new a, videos[a][0], Date.strptime(videos[a][1],"%d-%b-%y") , videos[a][2], video_tags.compact!        
       end
-    rescue NoMethodError,ArgumentError
-      #Nil pointers(empty lines or empty arrays) Bad format date . Can handle or ignore it  
-    end
   end  
 end
 
